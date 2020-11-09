@@ -66,3 +66,21 @@ NOTE:
 3. You can use ```forChild()``` in multiple modules.
 4. The ```forRoot()``` method takes care of the global injector configuration for the Router.
 5. The ```forChild()``` method has no injector configuration. It uses directives such as ```RouterOutlet``` and ```RouterLink```.
+
+### Prevent reimport of the GreetingModule
+
+1. Ref: <https://angular.io/guide/singleton-services#prevent-reimport-of-the-greetingmodule>
+2. **src/app/greeting/greeting.module.ts**
+
+```JavaScript
+constructor(@Optional() @SkipSelf() parentModule?: GreetingModule) {
+  if (parentModule) {
+    throw new Error(
+      'GreetingModule is already loaded. Import it in the AppModule only');
+  }
+}
+```
+
+### Singleton services
+
+1. Ref: <https://angular.io/guide/singleton-services#singleton-services>
