@@ -15,3 +15,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Task: Add another feature module (orders)
 
 1. Run```ng generate module orders --route orders --module app.module```
+
+### Task: Set up the UI
+
+1. Ref <https://angular.io/guide/lazy-loading-ngmodules#set-up-the-ui>
+
+```html
+
+<!-- app.component.html -->
+
+<h1>
+  {{title}}
+</h1>
+
+<button routerLink="/customers">Customers</button>
+<button routerLink="/orders">Orders</button>
+<button routerLink="">Home</button>
+
+<router-outlet></router-outlet>
+
+```
+
+![Landing page](/src/app/images/ui.jpg)
+
+- The landing page
