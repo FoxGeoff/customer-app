@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'orders', // redirect to orders
+    redirectTo: '',
     pathMatch: 'full'
   }
 ];

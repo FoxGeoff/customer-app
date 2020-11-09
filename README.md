@@ -47,3 +47,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Task: Inside the feature module
 
 1. Ref: <https://angular.io/guide/lazy-loading-ngmodules#inside-the-feature-module>
+
+### Task: Verify lazy loading
+
+1. Ref: <https://angular.io/guide/lazy-loading-ngmodules#verify-lazy-loading>
+
+![Orders page](/src/app/images/orders.jpg)
+
+![Customers page](/src/app/images/customers.jpg)
+
+1. forRoot() and forChild()
+2. Ref: <https://angular.io/guide/lazy-loading-ngmodules#forroot-and-forchild>
+
+NOTE:
+
+1. Use ```RouterModule.forRoot()``` only once in the application, inside the **AppRoutingModule**.
+2. The CLI also adds ```RouterModule.forChild(routes)``` to feature routing modules
+3. You can use ```forChild()``` in multiple modules.
+4. The ```forRoot()``` method takes care of the global injector configuration for the Router.
+5. The ```forChild()``` method has no injector configuration. It uses directives such as ```RouterOutlet``` and ```RouterLink```.
