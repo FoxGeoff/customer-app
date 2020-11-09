@@ -39,3 +39,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![Landing page](/src/app/images/ui.jpg)
 
 - The landing page
+
+### Task: Imports and route configuration
+
+1. Ref: <https://angular.io/guide/lazy-loading-ngmodules#imports-and-route-configuration>
