@@ -11,3 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 5. Run ```ng generate module customers --route customers --module app.module```
 
 ### Task: Add customer files
+
+### Task: Add another feature module (orders)
+
+1. Run```ng generate module orders --route orders --module app.module```
