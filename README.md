@@ -43,3 +43,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Task: Imports and route configuration
 
 1. Ref: <https://angular.io/guide/lazy-loading-ngmodules#imports-and-route-configuration>
+
+### Task: Inside the feature module
+
+1. Ref: <https://angular.io/guide/lazy-loading-ngmodules#inside-the-feature-module>
